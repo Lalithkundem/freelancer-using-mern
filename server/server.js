@@ -16,7 +16,7 @@ console.log(__dirname);
 
 
 const app = express();
-const port = process.env.PORT || 5001;
+const port = 5001;
 
 const otpStore = {};
 export default otpStore;
