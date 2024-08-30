@@ -35,7 +35,7 @@ function Login() {
       });
 
       if (user.typeOfUser === "Freelancer") {
-        navigate("/fidashboard",{state:{user_id:user.id,name:user.name}});
+        navigate("/fidashboard",{state:{user_id:user.id,name:user.name,email:user.email}});
       } else if (user.typeOfUser === "User") {
         navigate("/userdashboard",{state:{name:user.name,user_id:user.id}});
       }else{

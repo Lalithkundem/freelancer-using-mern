@@ -12,7 +12,7 @@ function FreelancerDashboard() {
     const location=useLocation();
    
     const handleClick=()=>{
-            navigate("/addData",{state:{user_id:location.state.user_id,name:location.state.name}});
+            navigate("/addData",{state:{user_id:location.state.user_id,name:location.state.name,email:location.state.email}});
     }
     const handleStatus=()=>{
         navigate("/viewStatus",{state:{user_id:location.state.user_id}});
