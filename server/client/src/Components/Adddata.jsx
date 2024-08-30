@@ -53,7 +53,7 @@ function AddData() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5001/dashboard/addFreelancerDetails", data, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/dashboard/addFreelancerDetails`, data, {
         headers: {
           Authorization: `Bearer ${tokenDetails.token}`,
         },

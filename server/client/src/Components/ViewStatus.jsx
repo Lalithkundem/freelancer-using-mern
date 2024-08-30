@@ -22,7 +22,7 @@ function ViewStatus() {
             console.log(user_id);
             try {
                 console.log("user is:",user_id);
-                const response = await axios.get(`http://localhost:5001/dashboard/status/${user_id}`,
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/dashboard/status/${user_id}`,
                     {
                         headers: {
                           Authorization: `Bearer ${tokenDetails.token}`,

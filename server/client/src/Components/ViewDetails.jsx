@@ -20,7 +20,7 @@ function ViewDetails() {
         const fetchData = async () => {
             try {
                 console.log(freelancer_id);
-                const response = await axios.get(`http://localhost:5001/dashboard/freelancer/${freelancer_id}`, {
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/dashboard/freelancer/${freelancer_id}`, {
                     headers: {
                         Authorization: `Bearer ${tokenDetails.token}`,
                     },
@@ -30,7 +30,7 @@ function ViewDetails() {
                 setFullData(response.data);
                
 
-                await axios.post("http://localhost:5001/dashboard/addFreelancerSeenStatus", {
+                await axios.post(`${process.env.REACT_APP_API_URL}/dashboard/addFreelancerSeenStatus`, {
                     user_id: user_id,
                     freelancer_id: freelancer_id,
                     name: name,

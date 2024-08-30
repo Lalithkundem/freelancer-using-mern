@@ -19,7 +19,7 @@ function UserDashboard() {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5001/dashboard/allFreelancers",
+          `${process.env.REACT_APP_API_URL}/dashboard/allFreelancers`,
           {
             headers: {
               Authorization: `Bearer ${tokenDetails.token}`,

@@ -23,7 +23,7 @@ const navigate=useNavigate();
         console.log(datas);
         e.preventDefault();
         try{
-            const response=await axios.post("http://localhost:5001/user/register",datas);
+            const response=await axios.post(`${process.env.REACT_APP_API_URL}/user/register`,datas);
             console.log(response.data);
             alert(response.data.message);
 
