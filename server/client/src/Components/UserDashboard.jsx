@@ -4,6 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import "./UserDashboard.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Store } from "../App";
+import config from './config';
 
 function UserDashboard() {
   const [searchInput, setSearchInput] = useState("");
@@ -19,7 +20,7 @@ function UserDashboard() {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `${process.env.REACT_APP_API_URL}/dashboard/allFreelancers`,
+          `${config.apiUrl}/dashboard/allFreelancers`,
           {
             headers: {
               Authorization: `Bearer ${tokenDetails.token}`,

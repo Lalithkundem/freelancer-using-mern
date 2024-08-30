@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, {  useState, useEffect, useContext } from 'react';
 import { Store } from '../App';
 import { useLocation, useNavigate } from 'react-router-dom';
+import config from './config';
 
 function ViewStatus() {
     const [viewData, setViewData] = useState([]);
@@ -22,7 +23,7 @@ function ViewStatus() {
             console.log(user_id);
             try {
                 console.log("user is:",user_id);
-                const response = await axios.get(`${process.env.REACT_APP_API_URL}/dashboard/status/${user_id}`,
+                const response = await axios.get(`${config.apiUrl}/dashboard/status/${user_id}`,
                     {
                         headers: {
                           Authorization: `Bearer ${tokenDetails.token}`,

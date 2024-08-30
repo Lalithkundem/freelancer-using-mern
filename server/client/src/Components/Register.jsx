@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Register.css';
 import { useNavigate,Link } from 'react-router-dom';
 import image from './images/home.jpg';
+import config from './config';
 
 function Register() {
     const [datas,setDatas] =useState({
@@ -23,7 +24,7 @@ const navigate=useNavigate();
         console.log(datas);
         e.preventDefault();
         try{
-            const response=await axios.post(`${process.env.REACT_APP_API_URL}/user/register`,datas);
+            const response=await axios.post(`${config.apiUrl}/user/register`,datas);
             console.log(response.data);
             alert(response.data.message);
 
