@@ -30,7 +30,7 @@ function ViewDetails() {
                 setFullData(response.data);
                
 
-                await axios.post(`${config.apiUrl}/dashboard/addFreelancerSeenStatus`, {
+                await axios.post(`${process.env.REACT_APP_API_URL}/dashboard/addFreelancerSeenStatus`, {
                     user_id: user_id,
                     freelancer_id: freelancer_id,
                     name: name,
