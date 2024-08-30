@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, {  useState, useEffect, useContext } from 'react';
 import { Store } from '../App';
 import { useLocation, useNavigate } from 'react-router-dom';
-import config from './config';
+import config from './config.js';
 
 function ViewStatus() {
     const [viewData, setViewData] = useState([]);

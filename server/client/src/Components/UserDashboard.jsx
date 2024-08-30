@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import "./UserDashboard.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Store } from "../App";
-import config from './config';
+import config from './config.js';
 
 function UserDashboard() {
   const [searchInput, setSearchInput] = useState("");

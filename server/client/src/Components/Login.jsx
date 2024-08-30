@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import config from './config';
+import config from './config.js';
 import image from "./images/home.jpg";
 import { Store } from "../App.js";
 

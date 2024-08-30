@@ -4,7 +4,7 @@ import './Adddata.css';
 import img from './images/homepage.png';
 import { Store } from '../App';
 import axios from 'axios';
-import config from './config';
+import config from './config.js';
 
 function AddData() {
   const location = useLocation();

@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Register.css';
 import { useNavigate,Link } from 'react-router-dom';
 import image from './images/home.jpg';
-import config from './config';
+import config from './config.js';
 
 function Register() {
     const [datas,setDatas] =useState({
