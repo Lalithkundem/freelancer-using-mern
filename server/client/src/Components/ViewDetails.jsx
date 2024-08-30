@@ -3,7 +3,6 @@ import axios from 'axios';
 import './ViewData.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Store } from '../App';
-import config from './config.js';
 
 function ViewDetails() {
     const [fullData, setFullData] = useState([]);
@@ -21,7 +20,7 @@ function ViewDetails() {
         const fetchData = async () => {
             try {
                 console.log(freelancer_id);
-                const response = await axios.get(`${config.apiUrl}/dashboard/freelancer/${freelancer_id}`, {
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/dashboard/freelancer/${freelancer_id}`, {
                     headers: {
                         Authorization: `Bearer ${tokenDetails.token}`,
                     },

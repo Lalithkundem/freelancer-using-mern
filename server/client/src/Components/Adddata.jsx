@@ -4,7 +4,7 @@ import './Adddata.css';
 import img from './images/homepage.png';
 import { Store } from '../App';
 import axios from 'axios';
-import config from './config.js';
+
 
 function AddData() {
   const location = useLocation();
@@ -54,7 +54,7 @@ function AddData() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${config.apiUrl}/dashboard/addFreelancerDetails`, data, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/dashboard/addFreelancerDetails`, data, {
         headers: {
           Authorization: `Bearer ${tokenDetails.token}`,
         },

@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import config from './config.js';
+
 import image from "./images/home.jpg";
 import { Store } from "../App.js";
 
@@ -19,7 +19,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${config.apiUrl}/user/login`, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/login`, {
         email: email,
         password: pass,
       });
