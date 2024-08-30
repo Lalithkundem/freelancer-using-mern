@@ -1,0 +1,38 @@
+
+.heros-section {
+    height: 100vh;
+    background-image: url('./home.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    text-align: center;
+    position: relative;
+}
+
+ .content {
+    color: rgb(18, 18, 18);
+    font-size: 20px;
+} 
+
+.content button {
+    background:none;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    color: #0c0c0c;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+}
+
+.content button:hover{
+    background-color: blue;
+    color: white;
+}
+strong{
+    font-size: 20px;
+}

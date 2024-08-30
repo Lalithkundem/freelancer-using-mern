@@ -1,0 +1,62 @@
+#bg-ll{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.loginfields{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px 20px rgba(0,0,0,0.2);
+
+    width: 350px;
+    border-radius: 10px;
+    margin: auto;
+   margin-top: 8%;
+    gap: 10px;
+}
+
+.loginfields label{
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.loginfields input{
+   padding: 5px;
+   border-radius: 10px;
+   width: 100%;
+
+}
+
+.signin-btn{
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    color: #000;
+    background: none;
+    border-radius: 5px;
+   margin: 30px;
+   margin-left: 60px;
+    box-shadow: 5px 5px 5px 5px #a4a4a4;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.signin-btn:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.link-to{
+    margin-bottom: 20px;
+}

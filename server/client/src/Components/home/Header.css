@@ -1,0 +1,53 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+  background:none;
+  
+   transform:initial;
+   width: 100%;
+   color:rgb(15, 15, 15);
+   text-transform: uppercase;
+
+   box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+   
+  
+}
+.logo{
+    margin-left:30px
+
+}
+.logo h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+.btn1{
+    background:none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(17, 17, 17);
+   }
+
+
+header .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: end;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+.btn1:hover{
+    background-color: rgba(255, 255, 255, 0.867);
+    border-radius: 5px;
+    padding: 6px;
+    color: rgb(15, 14, 14);
+    cursor: pointer;
+}

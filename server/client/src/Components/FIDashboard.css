@@ -1,0 +1,93 @@
+
+#bg-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+
+
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.cards .dataEntryCard{
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 40px;
+    width: 20%;
+   
+
+}
+
+.cards .dataEntryCard:hover{
+    background-color: aqua;
+    cursor: pointer;
+    border: none;
+
+}
+
+.cards .viewedCard{
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 40px;
+    width: 20%;
+
+}
+
+.cards .viewedCard:hover{
+    background-color: aqua;
+    cursor: pointer;
+    border: none;
+}
+
+.welcomemsg{
+    font: bold 20px 'Times new roman';
+    /* color: white; */
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+input{
+    font-weight: bold;
+    
+}
+.main-container input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: lightgray;
+
+}
+.main-container label{
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+
+}
+.firstOne{
+    margin: 10px;
+    margin-bottom: 10px;
+    
+}
+.main-container{
+    
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightslategray;
+}
+
+.welcomemsg{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
