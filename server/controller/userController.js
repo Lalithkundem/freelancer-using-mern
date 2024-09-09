@@ -67,7 +67,7 @@ export const loginUser=asyncHandler(async(req,res)=>{
                 id:user.id
             },
         },process.env.ACCESS_TOKEN_SECRET,
-        {expiresIn:"1m"}
+        {expiresIn:"20m"}
     );
     // const otp=otpGenerator.generate(4,{upperCaseAlphabets:false,specialChars:false,lowerCaseAlphabets:false});
     // otpStore[user.email]={otp,timestamp:Date.now()};
